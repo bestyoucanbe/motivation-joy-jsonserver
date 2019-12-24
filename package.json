@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "local-json": "json-server -p 1717 -w database.json",
+    "start": "json-server -w database.json"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/bestyoucanbe/motivation-joy-jsonserver/issues"
   },
-  "homepage": "https://github.com/bestyoucanbe/motivation-joy-jsonserver#readme"
+  "homepage": "https://github.com/bestyoucanbe/motivation-joy-jsonserver#readme",
+  "dependencies": {
+    "json-server": "^0.15.1"
+  }
 }
