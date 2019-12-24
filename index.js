@@ -2,7 +2,7 @@ const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('database.json')
 const middlewares = jsonServer.defaults()
-const PORT = 1717
+const PORT = process.env.PORT || 1717
 
 // Set default middlewares (logger, static, cors and no-cache)
 server.use(middlewares)
